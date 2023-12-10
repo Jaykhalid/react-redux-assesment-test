@@ -35,7 +35,7 @@ export const Login = () => {
     return (
         <div className="row">
             <div className="col-md-6 side-banner">
-                {/* <img src={ Banner } alt="banner" /> */}
+                <img src={ Banner } alt="banner" />
             </div>
             <div className="col-md-5 d-flex">
                 <div className="align-self-center">
@@ -46,13 +46,13 @@ export const Login = () => {
                                 <span className="d-flex">
                                     <h4 className="mb-4" htmlFor="email">Email</h4><h4 className="mx-2 text-danger">*</h4>
                                 </span>
-                                <input type="email" name="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)} data-tip="Masukkan alamat email Anda" />
+                                <input type="email" name="email" placeholder="Email" value={email} onChange={(e)=>setEmail(e.target.value)} data-tip="Masukkan alamat email Anda" required/>
                             </div>
                             <div className="form-group py-1 row my-3">
                                 <span className="d-flex">
                                     <h4 className="mb-4" htmlFor="password">Password</h4><h4 className="mx-2 text-danger">*</h4>
                                 </span>
-                                <input type="password" name="password" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} data-tip="Masukkan kata sandi Anda" />
+                                <input type="password" name="password" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} data-tip="Masukkan kata sandi Anda" required />
                             </div>
                           <button type="submit" className="btn btn-danger p-3 rounded text-center">
                                 { loading ? 'Loading...' : 'Login' }
