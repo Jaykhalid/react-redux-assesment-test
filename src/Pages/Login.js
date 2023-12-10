@@ -35,7 +35,7 @@ export const Login = () => {
     return (
         <div className="row">
             <div className="col-md-6 side-banner">
-                <img src={ Banner } alt="banner" />
+                {/* <img src={ Banner } alt="banner" /> */}
             </div>
             <div className="col-md-5 d-flex">
                 <div className="align-self-center">
