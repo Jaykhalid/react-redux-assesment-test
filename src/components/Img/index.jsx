@@ -4,6 +4,7 @@ const Img = ({
   className,
   src = "defaultNoData.png",
   alt = "testImg",
+  onClick,
   ...restProps
 }) => {
   return (

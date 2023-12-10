@@ -26,6 +26,9 @@ export const Login = () => {
                 setPassword('');
                 navigate('/dashboard');
             }
+            else {
+                return error;
+            }
         })
     }
     
@@ -54,9 +57,7 @@ export const Login = () => {
                           <button type="submit" className="btn btn-danger p-3 rounded text-center">
                                 { loading ? 'Loading...' : 'Login' }
                           </button>
-                          {error && (
-                            <div className="alert alert-danger" role='alert'> {error} </div>
-                          )}
+                          {error&&(<div className='alert alert-danger' role='alert'>{error}</div>)}
                           <Link to="/register" className="btn btn-link x text-uppercase text-danger text-bold text-center"> Register Now </Link>
                         </form>
                     </div>
