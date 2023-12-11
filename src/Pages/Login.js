@@ -1,9 +1,8 @@
 import React, { useState }  from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Banner from "../banner.png";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../Store/UserSlice";
-import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
     // states
